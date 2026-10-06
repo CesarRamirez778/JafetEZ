@@ -1,0 +1,33 @@
+JAFETT EZ - LANDING DEL CONCIERTO
+=================================
+
+CONTENIDO
+  index.html            La página (todo el diseño y el código en un solo archivo)
+  favicon.ico           Ícono de la pestaña (logo JAFETT EZ)
+  assets/
+    img/hero/           Foto de portada
+    img/about/          Foto de "¿Quién es Jafett EZ?"
+    img/momentos/       Fotos de "Momentos destacados", una carpeta por botón
+        alvaro/         Opener Álvaro Díaz 2026
+        cro/            Opener CRO El Salvador (vacía por ahora; el botón se oculta solo)
+        shows/          Más momentos
+    img/og/             Imagen que sale al compartir el enlace en WhatsApp/redes
+    img/logo/           Logo original
+    img/extras/         Fotos que no se usan en la página
+    icons/              Íconos para celular y navegador
+
+COMO PUBLICARLO (Cloudflare Pages, gratis)
+  1. Entra a cloudflare.com > Workers & Pages > Create > Pages > Upload assets.
+  2. Arrastra esta carpeta completa (o el contenido del zip descomprimido) y pulsa Deploy.
+  3. En "Custom domains" conecta tu dominio.
+
+ANTES DE PUBLICAR
+  - En index.html reemplaza TU-DOMINIO.com por tu dominio real (3 veces, en las etiquetas og:image,
+    og:url y twitter:image). Así se ve la imagen al compartir el enlace.
+  - El botón de boletos usa FORM_URL (busca esa palabra en index.html).
+
+COMO AGREGAR FOTOS A "MOMENTOS DESTACADOS"
+  1. Copia la foto a assets/img/momentos/<carpeta>/ (ejemplo: cro-1.jpg).
+  2. Si el nombre sigue el patrón (alvaro-4.jpg, cro-1.jpg, show-4.jpg hasta el 6), aparece sola.
+     Si no, agrega el nombre en la lista MOMENTOS dentro de index.html.
+  Consejo: usa fotos de máximo 1600 px de lado y menos de 400 KB.
